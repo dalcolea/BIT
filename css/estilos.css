@@ -1,0 +1,57 @@
+	#container{
+		max-width: 1135px;
+		margin: auto;
+		background-color: blue;
+		padding: 30px;
+		font-family: arial;
+	}
+	#container>div {
+		margin-bottom: 20px;
+		background-color: #D4D4D4;
+		padding: 20px;
+	}
+	#opciones{
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+	.opcion{
+		display:flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		max-width: 300px;
+		cursor: pointer;
+	}
+	.opcion:hover{
+		background: orange;
+	}
+	.opcion input{
+		display: none;
+	}
+	.opcion img {
+		width: 100%; 
+		margin-bottom: 15px;
+	}
+	.option-price {font-weight: bold; font-size: 1.2em;}
+	#paso2,#paso3,#paso4,#paso5,#paso6{
+		display:none;
+	}
+	#inputs-precios input:not([type='button']) {
+		width: 150px;
+	}
+
+	input[type="text"]{
+		font-size: 20px;
+	}
+
+	#paso6{
+		text-align: center;
+	}
+
+	#paso3 label {
+		width: 100px;
+		display: inline-block;
+	}
+

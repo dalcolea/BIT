@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Título de la web</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src='js/script.js'></script>
+</head>
+<body>
+<div id="container">
+	<div id="paso1">
+		<h2>Paso 1 Elige destino</h2>
+		<div id="opciones">
+			<div class="opcion">
+				<img src="img/Oslo.jpeg" alt="">
+				<div class="option-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+				</div>
+				<div class="option-price">250 euros</div>
+				<input type="radio" name="opcion" value="250">
+
+			</div>
+			<div class="opcion">
+				<img src="img/lisboa.jpeg" alt="">
+				<div class="option-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+				</div>
+				<div class="option-price">350 euros</div>
+				<input type="radio" name="opcion" value="350">
+
+			</div>
+			<div class="opcion">
+				<img src="img/el_cairo.jpeg" alt="">
+				<div class="option-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.
+				</div>
+				<div class="option-price">450 euros</div>
+				<input type="radio" name="opcion" value="450">
+			</div>
+		</div>
+	</div>
+	<div id="paso2">
+		<h2>Paso 2 Indica numero de noches y personas</h2>
+		<div id="inputs-precios">
+			<span>Precio hotel  </span>
+			<input id="campo1" type="text" required disabled autocomplete="off">
+			<span>Noches  </span>
+			<input id="campo2" type="text" value="2" required pattern="^[1-9][0-9]*$" title="Usar sólo numeros" autocomplete="off">
+			<span>Personas  </span>
+			<input id="campo3" type="text" value="2" required pattern="^[1-9][0-9]*$" title="Usar sólo numeros" autocomplete="off">
+			<span>=  </span>
+			<input id="campo4" type="text" required disabled autocomplete="off">
+			<input type="button" id="contratar" value='contratar'> 
+		</div>
+	</div>
+	<div id="paso3">
+		<h2>Paso 3 indique las personas que realizarán el viaje</h2>
+		<h2>Para poder reservar los billetes de avión es necesario inscribir el nombre y apellido de cada uno de los integrantes del viaje:</h2>
+		<label>Nombre: </label>
+		<input id="campo5" type="text" required autocomplete="off" pattern="^[a-zA-Z]+$"><br><br>
+		<label>Apellidos: </label>
+		<input id="campo6" type="text" required autocomplete="off" pattern="^[a-zA-Z]+$"><br><br>
+		<button id="anyadir">Añadir</button>
+	</div>
+	<div id="paso4">
+		<div id="aviso-pasajeros"></div>
+		<div id="aviso-txt"></div>
+	</div>
+	
+	<div id="paso5">
+		
+	</div>
+	<div id="paso6">
+		<div id='tarjeta'>
+			<img src="img/embarque.jpg" alt="">
+		</div>
+		<br><br>
+		<input type="button" id="imprimir" value='imprimir'>
+		<input type="button" id="otra" value='Otra reserva'>
+	</div>
+</div>
+</body>
+</html>
