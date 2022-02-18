@@ -11,9 +11,10 @@
 	#container {
 		max-width: 1135px;
 		margin: auto;
-		background-color: blue;
+		background-color: rgba(0, 0, 255, 0.562);
 		padding: 30px;
 		font-family: arial;
+		border-radius: 20px;
 	}
 
 	#container>div {
