@@ -1,52 +1,83 @@
-	#container{
+	body {
+		font-family: sans-serif;
+	}
+
+	*,
+	*::after,
+	*::before {
+		box-sizing: border-box;
+	}
+
+	#container {
 		max-width: 1135px;
 		margin: auto;
 		background-color: blue;
 		padding: 30px;
 		font-family: arial;
 	}
+
 	#container>div {
 		margin-bottom: 20px;
 		background-color: #D4D4D4;
 		padding: 20px;
 	}
-	#opciones{
-		display:flex;
+
+	#opciones {
+		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: stretch;
 	}
-	.opcion{
-		display:flex;
+
+	.opcion {
+		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
 		max-width: 300px;
 		cursor: pointer;
 	}
-	.opcion:hover{
+
+	.opcion:hover {
 		background: orange;
+		transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+		-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+		-moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+		-ms-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+		-o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 	}
-	.opcion input{
+
+	.opcion input {
 		display: none;
 	}
+
 	.opcion img {
-		width: 100%; 
+		width: 100%;
 		margin-bottom: 15px;
 	}
-	.option-price {font-weight: bold; font-size: 1.2em;}
-	#paso2,#paso3,#paso4,#paso5,#paso6{
-		display:none;
+
+	.option-price {
+		font-weight: bold;
+		font-size: 1.2em;
 	}
+
+	#paso2,
+	#paso3,
+	#paso4,
+	#paso5,
+	#paso6 {
+		display: none;
+	}
+
 	#inputs-precios input:not([type='button']) {
 		width: 150px;
 	}
 
-	input[type="text"]{
+	input[type="text"] {
 		font-size: 20px;
 	}
 
-	#paso6{
+	#paso6 {
 		text-align: center;
 	}
 
@@ -54,4 +85,3 @@
 		width: 100px;
 		display: inline-block;
 	}
-
